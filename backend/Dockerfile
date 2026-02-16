@@ -16,9 +16,8 @@ ENV PYTHONUNBUFFERED 1
 # install dependencies  
 RUN pip install --upgrade pip  
 
-# copy whole project to your docker home directory. 
-COPY hangry_api/ $DockerHOME  
-# run this command to install all dependencies  
+# copy only requirements and install dependencies
+COPY hangry_api/requirements.txt $DockerHOME/requirements.txt
 RUN pip install -r requirements.txt  
 # port where the Django app runs  
 EXPOSE 8000  
