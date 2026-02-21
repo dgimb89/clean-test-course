@@ -2,6 +2,9 @@ node_modules/
 .DS_Store
 .npmcache
 
+# Coverage
+.coverage
+
 # Django #
 *.log
 *.pot
@@ -10,16 +13,16 @@ __pycache__
 # We want a default db - db.sqlite3
 media
 
-# Backup files # 
-*.bak 
+# Backup files #
+*.bak
 
-# Environments 
-.env 
-.venv 
-env/ 
-venv/ 
-ENV/ 
-env.bak/ 
-venv.bak/ 
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
 
 test*.sh
